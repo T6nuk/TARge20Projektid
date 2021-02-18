@@ -1,0 +1,23 @@
+table{
+    background-color: rgb(242, 247, 177);
+    border-width: 2px;
+    border-style: dotted;
+}
+
+th{
+    color:rgb(53, 0, 139)
+}
+
+hr{
+    border-width: 3px;
+}
+
+h1{
+    font-style: oblique;
+    font-size: 46px;
+}
+
+h2{
+    font-style: italic;
+    font-size: 40x;
+}
