@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        span{
+            font-weight: 700;
+        }
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>UML diagrams – which diagram to use and why</h2>
+    <p><a href="https://drawio-app.com/uml-diagrams/">By Kymberly Fergusson</a></p>
+
+    <p>The Unified Modeling Language (UML) is a diagramming notation (language) that lets you visualize systems and software. It’s one of the most popular forms of diagramming in software development and became an ISO standard in 1997.  Since then, there have been a few updates to add extra UML diagram types and to support new technologies in programming.</p>
+    <p>There are two main categories and 14 different types of UML diagrams, each of which is used in a different situation.</p>
+
+    <ul>
+        <li><span>Structure diagrams:</span> show the static relationships between the components in the system.</li>
+        <li><span>Behavior diagrams:</span> show how the components in the system react to each other, they capture how the system changes, and in some diagrams, how it changes over time.</li>
+
+    </ul>
+
+    <img style="width:800px;" src="../images/UMLdiagrams.png" alt="UML Diagrams">
+    
+    <button class="accordion">Use case diagrams</button>
+    <div class="panel">
+        
+        <p>Use case diagrams in UML are used during the requirements phase of software development – they usually put the system requirements into a diagram format, and it’s easy to see what actions a system must support at a glance. Of course, there will be many use cases for your system, and therefore you will usually need to draw many use case diagrams!</p>
+        <p>Along with other UML diagrams, such as activity, sequence and component diagrams, use case diagrams help you to visualize your software and requirements, before jumping in and starting to program.</p>
+        <img src="../images/UseCase-HabitTrackingApp.png" alt="Use case diagram">
+    </div>
+
+    <button class="accordion">Class diagrams</button>
+    <div class="panel">
+        <p>UML class diagram notation was developed to represent classes and the relationships between them.</p>
+        <img src="../images/Class-Diagram-Habit-Tracker-app.png" alt="Class diagram">
+    </div>
+
+    <button class="accordion">Sequence diagrams</button>
+    <div class="panel">
+        <p>Sequence diagrams are used to visualize both interactions within programs, business processes and IT infrastructures.</p>
+        <p>They describe the sequence of interactions (messages) between actors and objects (things like databases or external interfaces).</p>
+        <img src="../images/sequence-diagram-habit-tracker.png" alt="Sequence diagram">
+    </div>
+
+    <button class="accordion">Activity diagrams</button>
+    <div class="panel">
+        <p>Activity diagrams model the behavior of users and systems as they follow a process.</p>
+        <p>They are a type of flow chart or workflow, but they use slightly different shapes.</p>
+        <img src="../images/ActivityDiagram-HabitTrackerApp.png" alt="Activity diagram">
+    </div>
+
+    <button class="accordion">State diagrams</button>
+    <div class="panel">
+        <p>State diagrams show which states lead to each other, and what triggers a change of state.</p>
+        <p>These diagrams are faster to create than activity or sequence diagrams, but show less information.</p>
+        <img src="../images/state-diagram-student-enrolment.png" alt="State diagram">
+    </div>
+
+    <button class="accordion">Interaction overview diagrams</button>
+    <div class="panel">
+        <p>These UML diagrams are a combination of an activity diagram and sequence diagrams.</p>
+        <p>easier to see the different paths that need to be programmed when there are complex if-then-else decisions.</p>
+        <img src="../images/Interaction-Overview-Habit-Tracker.png" alt="Interaction overview diagram">
+    </div>
+
+    <button class="accordion">Communication diagrams</button>
+    <div class="panel">
+        <p>Communication diagrams are another way to visualize the information more commonly represented by UML sequence diagrams.</p>
+        <p>They help you to clearly identify what messages (data) need to be sent between objects/roles in each specific scenario.</p>
+        <img src="../images/communication-habitCheckin.png" alt="Communication diagram">
+    </div>
+
+
+    <button class="accordion">Bitcoin calculator app activity diagram</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
