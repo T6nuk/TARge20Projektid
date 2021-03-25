@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis on Git?</title>
+</head>
+<body>
+    <h1>Git</h1>
+    <hr>
+    <h2>Mis on Git?</h2>
+    <p>Git lokaalne vahend, mida kasutatakse andmete (koodi) haldamiseks. Git jaotab need andmed repositooriumi sisse.</p>
+    <h2>Mis on repositoorium?</h2>
+    <p>Repositoorium on koht, kuhu andmete ajalugu on salvestatud.</p>
+    <h2>Mis on "Branch"?</h2>
+    <p>"Branch" on repositooriumi sees olev koht, mis hoiustab kasutaja commit'e.</p>
+    <h2>Mis on Commit?</h2>
+    <p>Commit tähistab branchis oleva koodi erinevaid etappe.</p>
+    <h2>Kuidas oma projekti Gitiga siduda?</h2>
+    <p>Kui Git on alla laetud, siis tuleb avada giti terminal ja navigeerida oma projekti kausta ning käskude abil git projektiga siduda. </p>
+
+    <h3>Git'i käsud: </h3>
+    <pre>
+    git init - initsialiseerib repositooriumi 
+
+    git add . - lisab projekti failid giti süsteemi
+
+    git commit -m - salvestame projekti mingis etapis, kus anname commitile nime, kuhu kirjutatakse muudatuste kohta info. 
+
+    git log - viimaste commitide vaatamiseks 
+
+    git reset --hard (commit id) - lisame commit id, mis lubab kustutada selle commiti ja kõik pärast seda.
+
+    git checkout --. - liigub viimase commit'i juurde. 
+
+    git checkout -b (branch name) - moodusta uue branch'i, milles on ka kõik eelmise branch'i commitid.  
+
+    git merge (name of branch) - seob kaks branchi kokku. 
+
+    git branch -D (name of branch) - kustutab branch'i. 
+    </pre>
+    
+</body>
+</html>
